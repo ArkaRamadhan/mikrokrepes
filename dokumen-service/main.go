@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/arkaramadhan/its-vo/common/db"
+	"github.com/arkaramadhan/its-vo/common/initializers"
 	"github.com/arkaramadhan/its-vo/controllers"
 	"github.com/gin-gonic/gin"
 )
