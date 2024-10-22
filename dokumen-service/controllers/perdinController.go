@@ -13,8 +13,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/arkaramadhan/its-vo/models"
 	"github.com/arkaramadhan/its-vo/common/initializers"
+	"github.com/arkaramadhan/its-vo/common/utils"
+	"github.com/arkaramadhan/its-vo/dokumen-service/models"
 
 	"github.com/gin-gonic/gin"
 	"github.com/xuri/excelize/v2"
@@ -551,10 +552,10 @@ func ImportExcelPerdin(c *gin.Context) {
 		}
 
 		// Ambil data dari kolom
-		noPerdin := getStringOrNil(getColumn(row, 0))
-		tanggalStr := getStringOrNil(getColumn(row, 1))
-		hotel := getStringOrNil(getColumn(row, 2))
-		transport := getStringOrNil(getColumn(row, 3))
+		noPerdin := utils.GetStringOrNil(utils.GetColumn(row, 0))
+		tanggalStr := utils.GetStringOrNil(utils.GetColumn(row, 1))
+		hotel := utils.GetStringOrNil(utils.GetColumn(row, 2))
+		transport := utils.GetStringOrNil(utils.GetColumn(row, 3))
 
 		var tanggalTime *time.Time
 		if tanggalStr != nil {

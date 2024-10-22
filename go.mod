@@ -3,13 +3,6 @@ module github.com/arkaramadhan/its-vo
 go 1.22.5
 
 require (
-	github.com/arkaramadhan/its-vo/common v0.0.0-20241022071046-07f777bcd062
-	github.com/gin-gonic/gin v1.10.0
-	github.com/xuri/excelize/v2 v2.9.0
-	gorm.io/gorm v1.25.12
-)
-
-require (
 	github.com/bytedance/sonic v1.11.6 // indirect
 	github.com/bytedance/sonic/loader v0.1.1 // indirect
 	github.com/cloudwego/base64x v0.1.4 // indirect

@@ -9,11 +9,12 @@ import (
 	"net/url"
 	"os"
 	"path/filepath"
-	"project-its/initializers"
-	"project-its/models"
 	"strconv"
 	"strings"
 	"time"
+
+	"github.com/arkaramadhan/its-vo/common/initializers"
+	"github.com/arkaramadhan/its-vo/dokumen-service/models"
 
 	"github.com/gin-gonic/gin"
 	"github.com/xuri/excelize/v2"
