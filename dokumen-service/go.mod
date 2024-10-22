@@ -3,7 +3,7 @@ module github.com/arkaramadhan/its-vo/dokumen-service
 go 1.22.5
 
 require (
-	github.com/arkaramadhan/its-vo/common v0.0.0-20241022091803-d52943062493
+	github.com/arkaramadhan/its-vo/common v0.0.0-20241022093158-29aaf3931832
 	github.com/gin-gonic/gin v1.10.0
 	github.com/xuri/excelize/v2 v2.9.0
 	gorm.io/gorm v1.25.12
