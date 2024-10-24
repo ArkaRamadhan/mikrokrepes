@@ -8,7 +8,7 @@ import (
 func init() {
 
 	initializers.LoadEnvVariables()
-	initializers.ConnectToDB("informasi")
+	initializers.ConnectToDB("common")
 	initializers.DB.Exec("CREATE EXTENSION IF NOT EXISTS \"uuid-ossp\";")
 
 }
