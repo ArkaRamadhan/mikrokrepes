@@ -1,0 +1,49 @@
+services:
+  dokumen-service:
+    build: ./dokumen-service
+    environment:
+      - DATABASE_URL= ${DB_URL}
+      - DATABASE_SCHEMA=dokumen
+    ports:
+      - "8081:8081"
+
+  informasi-service:
+    build: ./informasi-service
+    environment:
+      - DATABASE_URL= ${DB_URL}
+      - DATABASE_SCHEMA=dokumen
+    ports:
+      - "8082:8082"
+
+  kegiatan-service:
+    build: ./kegiatan-service
+    environment:
+      - DATABASE_URL= ${DB_URL}
+      - DATABASE_SCHEMA=kegiatan
+    ports:
+      - "8083:8083"
+
+  user-service:
+    build: ./user-service
+    environment:
+      - DATABASE_URL= ${DB_URL}
+      - DATABASE_SCHEMA=user
+    ports:
+      - "8084:8084"
+
+  weeklyTimeline-service:
+    build: ./weeklyTimeline-service
+    image: mikropsopserpis_weeklytimeline_service 
+    environment:
+      - DATABASE_URL= ${DB_URL}
+      - DATABASE_SCHEMA=weeklytimeline
+    ports:
+      - "8085:8085"
+
+  project-service:
+    build: ./project-service
+    environment:
+      - DATABASE_URL= ${DB_URL}
+      - DATABASE_SCHEMA=project
+    ports:
+      - "8086:8086"
